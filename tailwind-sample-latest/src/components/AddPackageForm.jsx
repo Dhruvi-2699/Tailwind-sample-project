@@ -1,9 +1,12 @@
 import { Form, Formik } from 'formik';
+import { useContext } from 'react';
 import * as Yup from 'yup';
 import ButtonComponent from './ButtonComponent';
 import InputComponent from './InputComponent';
+import PackageContext from '../context/PackageContext';
 
 function AddPackageForm() {
+    const{setPackageData} =useContext(PackageContext)
     const validationSchema = Yup.object({
         senderName: Yup.string()
           .required('Sender name is required')
@@ -28,7 +31,7 @@ function AddPackageForm() {
       }}
       validationSchema={validationSchema}
       onSubmit={(values) => {
-        // setPackageData(values)
+        setPackageData(values)
         // Handle form submission
         console.log('Form submitted with values:', values);
       }}
