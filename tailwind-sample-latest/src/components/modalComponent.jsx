@@ -1,12 +1,12 @@
-import React from 'react'
+/* eslint-disable react/prop-types */
+import AddPackageForm from './AddPackageForm'
 
 function ModalComponent({closeModal}) {
   return (
          <div className="fixed inset-0 bg-gray-500 bg-opacity-50 flex justify-center items-center z-50">
           <div className="bg-white p-6 rounded-lg shadow-lg w-96">
-            <h2 className="text-2xl mb-4">Modal Title</h2>
-            <p>Add New Package</p>
-
+            <h2 className="text-2xl mb-4">Add New Package</h2>
+            <AddPackageForm />
             {/* Close button */}
             <button 
               onClick={closeModal}
