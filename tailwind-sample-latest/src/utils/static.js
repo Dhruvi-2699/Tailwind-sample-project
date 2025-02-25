@@ -1,0 +1,1 @@
+export const statusOptions =['Shipped','In-Transmit','Deliverd']
