@@ -1,4 +1,5 @@
 # Tailwind-sample-project
+* Its a package manager system.
 * I have use useContext here for data storage.
 * The code is devided into small components for reuse
 * It has some common component like button, dropdown, input, modal & some page components form & card.
